@@ -53,7 +53,7 @@ try:
     #chart and news
     with st.container():
 
-        ticker = st.text_input("Enter stock ticker to get its data", "TWTR")
+        ticker = st.text_input("Enter stock ticker to get its data", "AMZN")
         left_column, right_column = st.columns(2)
 
         #---header section
@@ -115,5 +115,4 @@ try:
 
     #Business Summary
 except:
-    st.write("Error! Are you sure it's a U.S. stock ticker you entered?")
-    st.write("Please enter a valid ticker!")
+    st.write("Data unavailable!")
